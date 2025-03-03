@@ -1,5 +1,7 @@
 use leptos::prelude::*;
 
+mod components;
+
 fn main() {
-    leptos::mount::mount_to_body(|| view! { <p>"Hello, world!"</p> })
+    mount_to_body(components::counter::Counter);
 }
